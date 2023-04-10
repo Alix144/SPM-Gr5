@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Assign Employee</title>
+    <link rel="stylesheet" href="styleins.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <img src="logo.png" width="150" height="150" class="logo">
+            <h1>Assign</h1>
+
+            <ul>
+                <li class="main-menu"><i class="fa-solid fa-clipboard-list fa-xl"></i></li>
+            </ul>
+
+            <input type="button" onclick="location.href='adindex.html'" class="btn btn-1" value="Home">
+            <input type="button" onclick="location.href='index1.html'" class="btn btn-2" value="Assign Instructor">
+            <input type="button" onclick="location.href='index2.html'" class="btn btn-3" value="Assign Employee ">
+            <input type="button" onclick="location.href='index3.html'" class="btn btn-4" value="Quit">
+        </div>
+    </div>
+
+    <div class="container">
+        <form class="login_form" action="" method="get" name="form" onsubmit="return validated()">
+            <h2>Assign Employee </h2>
+            <div class="font">Name</div>
+            <input type="text" name="name1" placeholder="Name" />
+
+            <div id="name1_error">Please enter a valid name</div>
+
+            <div class="font font2">Surname</div>
+            <input type="text" name="surname" placeholder="Surname" />
+            <div id="surname_error">Please enter a surname</div>
+
+
+            <div class="font font3">Email</div>
+            <input type="text" name="email" placeholder="Email" />
+            <div id="email_error">Please enter a valid Email</div>
+
+            <div class="font font4">Password</div>
+            <input type="password" name="password" placeholder="Password" />
+            <div id="pass_error">Please fill up your Password</div>
+
+            <div class="font font5">Phone Number</div>
+            <input type="text" name="pnum" placeholder="Phone Number" />
+            <div id="pnum_error">Please fill up your Phone number</div>
+
+
+            <button type="submit">Save</button>
+
+        </form>
+        <div class="select-menu">
+            <div class="select">
+                <span>Current Employees</span>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="options-list">
+                <div class="option">Alfred Pearson</div>
+                <div class="option">Linden Todd</div>
+                <div class="option">Russ Schultz</div>
+                <div class="option">Lisa Johnson</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const select = document.querySelector(".select");
+        const options_list = document.querySelector(".options-list");
+        const options = document.querySelectorAll(".option");
+
+        //show & hide options list
+        select.addEventListener("click", () => {
+            options_list.classList.toggle("active");
+            select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+        });
+
+        //select option
+        options.forEach((option) => {
+            option.addEventListener("click", () => {
+                options.forEach((option) => { option.classList.remove('selected') });
+                select.querySelector("span").innerHTML = option.innerHTML;
+                option.classList.add("selected");
+                options_list.classList.toggle("active");
+                select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+            });
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
