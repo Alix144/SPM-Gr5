@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Admin Login Page</title>
+    <link rel="stylesheet" href="stylec.css" />
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <img src="logo.png" width="150" height="150" class="logo">
+            <h1>Login Page</h1>
+            <input type="button" onclick="location.href='index3.html'" class="btn btn-3" value="Back ">
+        </div>
+    </div>
+        
+    <div class="container">
+        <form class="login_form" action="adindex.html" method="get" name="form" onsubmit="return validated()">
+            <div class="font">Email</div>
+            <input autocomplete="off" type="text" name="email" placeholder="Email">
+            
+            <div id="email_error">Please enter a valid Email</div>
+            <div class="font font2">Password</div>
+            <input type="password" name="password" placeholder="Password" />
+            <div id="pass_error">Please fill up your Password</div>
+
+
+            <button type="submit">Login</button>
+
+        </form>
+    </div>
+
+    
+        <script src="newscript.js"></script>
+
+
+</body>
+</html>
