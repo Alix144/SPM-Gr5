@@ -36,16 +36,17 @@ body{
     width: 60%;
 }
 
-.sidebar h1{
-    width: 150px;
+.sidebar h2{
+    width: 80%;
     text-align: center;
     border-bottom: 3px solid #0ab3ae;
     margin-top: 0;
     margin-bottom: 30px;
+    padding-bottom: 5px;
 }
 
-#sidebar-btn{
-width: 80%;
+.sidebar-btn{
+width: 80% !important;
 }
 
 .bk-btn{
@@ -58,6 +59,7 @@ width: 80%;
 .main{
     width: 70%;
     margin: 0 auto;
+    height: 100vh;
 }
 
 .profile-info{
@@ -72,15 +74,12 @@ width: 80%;
     height: 150px;
 }
 
-
 @media screen and (max-width: 1100px) {
     .profile-info img {
       width: 120px;
       height: 120px;
     }
   }
-
-
 
 
 .content{
@@ -117,12 +116,9 @@ width: 80%;
     background-color: rgb(219, 219, 219);
 }
 
-.documents button{
+.documents a{
     margin-bottom: 5px;
 }
-
-
-
 
 .btn{
     background-color: #0ab3ae;
@@ -136,7 +132,199 @@ width: 80%;
     color: black;
 }
 
+/**********new-application-page************/
 
+form{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.form{
+    border: 3px solid #0ab3ae;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 40%;
+    min-width: 280px;
+    margin-bottom: 5px;
+}
+
+.radio{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radio1 , .radio2{
+    width: 50%;
+}
+
+
+.input-btn{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.input-btn p{
+    min-width: 205px;
+    text-align: center;
+}
+
+.input-btn label{
+    width: 40%;
+    background-color: #0ab3ae;
+}
+
+.subdiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.form-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2% auto;
+}
+
+.form-btn a, .form-btn input{
+    width: 30% !important;
+}
+
+.form-btn a{
+    background-color: #f93324;
+    border: none;
+}
+
+/**********new-message-page************/
+
+.main-div{
+    width: 70%;
+    margin: 0 auto;
+    height: 100vh;
+    text-align: center;
+}
+
+.main-msg{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-div h1{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 30%;
+    border-bottom: 5px solid #0ab3ae;
+}
+
+.div-btn{
+    width: 25%;
+    min-width: 170px;
+}
+
+.green{
+    background-color: #54c242;
+    border: none;
+}
+
+.current-btn{
+    background-color: #ffea03;
+    border-color: #ffea03;
+    color: black;
+}
+
+.div-msg{
+    width: 50%;
+}
+
+.div-msg2{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-msg2 label{
+    display: inline;
+}
+
+.msg-content, .msg-btn, textarea, .view{
+    margin-bottom: 10px;
+}
+
+.msg-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+select{
+    width: 70%;
+    height: 38px;
+}
+
+select, textarea, .view{
+    border: 3px solid #0ab3ae;
+    padding: 5px;
+}
+
+.search{
+    width: 100%;
+    height: 38px;
+    border: 3px solid #0ab3ae;
+    padding: 5px;
+}
+
+.view{
+    height: 240px;
+}
+
+.msgs{
+    margin: 5px auto;
+    width: 95%;
+    border-bottom: 1px solid #0ab3ae;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+
+}
+
+.msgs:hover{
+    background-color: #0ab3ae;
+}
+
+.msgs img{
+    width: 10%;
+    margin-right: 5px;
+}
+
+#letter-h1{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 45%;
+    border-bottom: 5px solid #0ab3ae;
+}
+
+
+/**********media************/
 @media screen and (max-width: 850px) {
     .sidebar{
         display: none;
@@ -225,7 +413,91 @@ width: 80%;
         margin: 0;
     }
 
-    .content{
-        
+    /**********new-application-page************/
+
+    form{
+        margin-top: 50px;
+        padding: 0;
     }
+
+    .form-btn a{
+        background-color: #f93324 !important;
+        border: none;
+        color: #fff !important;
+    }
+
+    .input input{
+        margin-bottom: 10px;
+    }
+
+    .input p{
+        min-width: 205;
+    }
+
+    .input-btn{
+        min-width: 205px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .input-btn label{
+        width: 100%;
+    }
+    
+    /**********new-message-page************/
+
+    .main-msg{
+        flex-direction: column;
+        margin-top: 10%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .div-btn{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .div-msg{
+        width: 100%;
+    }
+
+    textarea{
+        height: 200px;
+    }
+
+    .green{
+        background-color: #54c242 !important;
+        border: none !important;
+        color: #fff !important;
+    }
+
+    .main-div h1{
+        min-width: 150px;
+        margin-top: 50px;
+    }
+
+    #letter-h1{
+        min-width: 185px;
+        margin-top: 50px;
+    }
+  }
+
+
+  @media screen and (max-width: 420px) {
+
+    .input label, .input input{
+        width: 100%;
+        display: block;
+    }
+
+    .input{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+        min-width: 180px;
+    }
+
+
   }
