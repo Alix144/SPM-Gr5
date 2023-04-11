@@ -246,7 +246,7 @@ form{
 }
 
 .current-btn{
-    background-color: #ffea03;
+    background-color: #ffea03 !important;
     border-color: #ffea03;
     color: black;
 }

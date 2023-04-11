@@ -16,7 +16,7 @@
     
     <!-- ********************Mobile********************* -->
     <div class="top-part">
-        <i class="fa-solid fa-bars" style="color: #fff;"></i>
+        <i class="fa-solid fa-bars hamburger" style="color: #fff;" onclick="showSidebar()"></i>
         <i class="fa-solid fa-right-from-bracket" style="color: #fff;"></i>
     </div>
 
@@ -24,12 +24,12 @@
         <div class="info">
             <img src="images/logo.png" alt="uskudar-logo">
             <div class="btn-div">
-            <a class="btn btn-primary" id="sidebar-btn">Home</a>
-            <a class="btn btn-primary" id="sidebar-btn">New Application</a>
-            <a class="btn btn-primary" id="sidebar-btn">Inbox</a>
+            <a class="btn btn-primary" id="sidebar-btn" href="Student-profile.html">Home</a>
+            <a class="btn btn-primary" id="sidebar-btn" href="new-application.html">New Application</a>
+            <a class="btn btn-primary" id="sidebar-btn" href="new-message.html">Inbox</a>
         </div>
         </div>
-        <i class=" up fa-solid fa-chevron-up fa-2xl" style="color: #ffffff;"></i>
+        <i class=" up fa-solid fa-chevron-up fa-2xl upbtn" style="color: #fff;" onclick="hideSidebar()"></i>
     </div>
 
 
@@ -72,5 +72,6 @@
 
 </div>
 
+<script src="index.js"></script>
 </body>
 </html>
