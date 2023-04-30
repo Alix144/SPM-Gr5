@@ -12,7 +12,7 @@ body{
     overflow: hidden;
 }
 
-/* ***************Login pages**************** */
+/* ****************Login pages****************** */
 .login{
     margin: 5% auto;
     width: 50%;
@@ -50,6 +50,7 @@ body{
 .btn:hover{
     background-color: #FFF584;
     color: black;
+    box-shadow: 5px 5px 5px rgb(202, 202, 202);
 }
 
 form{
