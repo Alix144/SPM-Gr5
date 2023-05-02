@@ -160,6 +160,7 @@ body{
 
 .white-bg{
     margin: 0 auto;
+    padding-top: 5px;
     width: 90%;
     height: 45%;
     max-height: 170px;
@@ -183,6 +184,11 @@ body{
     max-height: 300px;
     height: 700px;
     width: 95%;
+}
+
+#white-bg-career-center{
+    max-height: none;
+    height: 90%;
 }
 
 
@@ -324,9 +330,47 @@ body{
 .div-right{
     height: 95% ;
     width: 60% ;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
+
+/*******career-center********/
+.content-msg .div-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-div{
+    margin-top: 10px;
+    padding: 5px;
+    display: block;
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 95%;
+    height: 80%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.info-div a{
+    margin: 0 auto;
+}
+
+
+.info-div >*{
+    font-size: 1rem;
+    display: inline;
+}
+
+.info-div h5{
+    display: block;
+}
+
+.info-div p{
+    display: inline;
+}
+
 
 /***********btns************/
 
