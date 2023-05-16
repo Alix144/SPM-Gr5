@@ -173,14 +173,16 @@ form input, form select{
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .div-2 div{
     margin: 0 auto;
+    margin-bottom: 10px;
     width: 500px;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 .div-2 input{

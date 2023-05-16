@@ -39,12 +39,19 @@
 		
 		
         body{
-            background: url("img/background.jpg");
+            background: #134920;
             background-size:cover;
             background-repeat:no-repeat;
             color:white;
         }
 		
+		#particles-js {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -10 !important;
+    }
+
 		table,th,td{
 			margin: auto;
 			border: none;
@@ -53,20 +60,24 @@
 			text-align: center;
 			font-size: 16px;
 			table-layout: auto;
-			background-color: #e8edf0;
+			background-color: ;
 			color: black;
 			margin-top: 100px;
+		}
+
+		table{
+			background: rgb(0, 0, 0, 0.6);
 		}
 		
 		th,td{
 			padding: 20px;
 			opacity: 0.9;
-			color: black;
+			color: #fff;
 			
 		}
 		
 		th{
-			background-color: cornflowerblue;
+			border-bottom: solid 1px #fff;
 			color: white;	
 		}
 		
@@ -103,6 +114,7 @@
     </style>
 </head>
 <body id="back">
+<div id="particles-js"></div>
 	<br><br><br><br>
 	<header id="header">
     <div class="container-fluid">
@@ -116,7 +128,8 @@
           <li><a href="empwelcome.php">Home</a></li>
           <li><a href="jobpost.php">Post Internship</a></li>
           <li class="menu-active"><a href="empjobstatus.php">Application Status</a></li>
-		  <li><a href="">Inbox</a></li>
+		  <li><a href="view-applications.php">View Applications</a></li>
+		  <li><a href="inbox-cc.php">Inbox</a></li>
 		  <li><a href="logout.php">Logout</a></li>
         </ul>
       </nav>
@@ -126,26 +139,21 @@
 	
 	
 	
-    <div style="text-align:center">
-        <h3 >Internship Application Status List</h3>
-		<form method="POST">
-    <div style="text-align: center" class="mt-5">
-	<label>Search: </label>	
-    <input type="text" placeholder="Type To Search" name="key" autocomplete="off" style="border-right:none; border-left: none; border-top:none;outline: none;border-bottom: 1px solid white;background-color:transparent; color: black"  >
-			
-			 <button type="submit" class="btn btn-light btn-xs" name="sub" >
-     			 <span class="glyphicon glyphicon-search"></span> Search
-   					 </button>
-		</form>
-		
-		
-		</div>
-    </div>
+
 	
 	
 	
 	
    <table style="width:100%;" class="mt-5"> 
+   <div style="text-align:center">
+        <h3 >Internship Application Status List</h3>
+		<form method="POST">
+
+		</form>
+		
+		
+		</div>
+    </div>
 	   
         <thead>
             <tr>
@@ -279,6 +287,8 @@
 	<script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/particles/particles.js"></script>
+  <script src="lib/particles/app.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>

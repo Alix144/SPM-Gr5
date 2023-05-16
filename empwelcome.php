@@ -39,8 +39,6 @@ if (!isset($_SESSION['empname'])) {
       background-color: #134920;
       height: 100%;
       width: 100%;
-      overflow: hidden;
-      
     }
 
 
@@ -66,6 +64,199 @@ if (!isset($_SESSION['empname'])) {
     }
   </style>
 
+<style>
+    body {
+      background-color: #134920;
+      height: 100%;
+      width: 100%;
+      overflow: ;
+    }
+
+    header{
+      position: sticky !important;
+    }
+
+    .findinternbtn button {
+      background: white;
+      border-radius: 30px;
+      margin-top: 230px;
+      font-weight: bold;
+    }
+
+    .findinternbtn button:hover {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    .parent{
+      margin: 20px 0 20px;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      text-align; center;
+    }
+
+    .content{
+      height: 100%;
+      background: rgb(0, 0, 0, 0.6);
+      border-radius: 0px;
+      color: #fff ;
+    }
+
+    .content-1{
+      margin-right: 5px;
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .content-1 img{
+      width: 70%;
+      border-radius: 100%;
+      border: solid 3px #18d26e;
+    }
+
+    .profile{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 70%;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .side-btns{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btn-get-started{
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 8px 32px;
+      border-radius: 50px;
+      transition: 0.5s;
+      margin: 10px;
+      color: #fff;
+      background: #18d26e;
+    }
+
+    .btn-get-started:hover {
+      background: #fff;
+      color: #18d26e;
+    }
+
+    .content-2{
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .content-2-1{
+      width: 100%;
+      height: 45%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+
+
+    .content-2-1 .content-2-children{
+      width: 45%;
+      height: 90% ;
+      max-height: 366px
+    }
+
+    .content-2-2{
+      width: 100%;
+      height: 45%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .content-2-2 .content-2-children{
+      width: 45%;
+      height: 90% ;
+      max-height: 366px
+    }
+
+    .doc a{
+      width: 75%;
+    }
+
+    .content-2-children h3{
+      border-bottom: solid 1px white;
+      width:70%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+  .incoming{
+    margin: auto;
+    padding: 5px;
+    width: 95%;
+    height: 75%;
+    overflow-y: scroll;
+    }
+
+
+    .incoming-full{
+    margin: auto;
+    padding: 5px;
+    width: 95%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.new-coming{
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255, 0.5);
+    border-bottom: solid 1px rgb(41, 41, 41);
+}
+
+.new-coming img{
+    width: 30px;
+}
+
+.new-coming p{
+    display: inline;
+
+}
+
+.new-coming:hover{
+    color: black;
+    cursor: pointer;
+    background-color: #18d26e;
+    border: none;
+    border-radius:5px;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0px 0 30px rgba(0, 0, 0, 1);
+  border-radius: 5px;
+}
+  </style>
+
 </head>
 
 
@@ -83,18 +274,201 @@ if (!isset($_SESSION['empname'])) {
           <li class="menu-active"><a href="empwelcome.php">Home</a></li>
           <li><a href="jobpost.php">Post Internship</a></li>
           <li><a href="empjobstatus.php">Application Status</a></li>
-		      <li><a href="">Inbox</a></li>
+          <li><a href="view-applications.php">View Applications</a></li>
+		      <li><a href="inbox-cc.php">Inbox</a></li>
 		      <li><a href="logout.php">Logout</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <div class="postinternbtn text-center">
-    <a href="jobpost.php"><button type="button" class="btn btn-lg">Post Internship</button></a>
+  <div class="findinternbtn text-center parent">
+
+    <div class="content content-1">
+      <div class="profile">
+        <img src="img/elon.jpg" alt="">
+        <div class="info">
+          <h3>Elon Musk</h3>
+          <h5>ID: 99</h5>
+          <h5>Career Services</h5>
+        </div>
+      </div>
+
+      <div class="side-btns">
+        <a href="view-applications.php" class="btn-get-started scrollto">View Applications</a>
+        <a href="inbox-cc.php" class="btn-get-started scrollto">Inbox</a>
+      </div>
+
+    </div>
+
+    <div class="content content-2">
+
+      <div class="content-2-1">
+
+        <div class="my-application content-2-children">
+          <h3>Incoming Applications</h3>
+          <div class="incoming">
+
+          <div class="new-coming" onclick="goToViewApplications()">
+              <div class="new-coming-child">
+                  <img src="img/document.png" alt="Document">
+                  <p>Application 1</p>
+              </div>
+              <div>
+                  <p>04/12</p>
+              </div>
+          </div>
+
+          <div class="new-coming" onclick="goToViewApplications()">
+              <div class="new-coming-child">
+                  <img src="img/document.png" alt="Document">
+                  <p>Application 2</p>
+              </div>
+              <div>
+                  <p>01/05</p>
+              </div>
+          </div>
+
+          <div class="new-coming" onclick="goToViewApplications()">
+              <div class="new-coming-child">
+                  <img src="img/document.png" alt="Document">
+                  <p>Application 3</p>
+              </div>
+              <div>
+                  <p>04/12</p>
+              </div>
+          </div>
+
+          <div class="new-coming" onclick="goToViewApplications()">
+              <div class="new-coming-child">
+                  <img src="img/document.png" alt="Document">
+                  <p>Application 4</p>
+              </div>
+              <div>
+                  <p>29/9</p>
+              </div>
+          </div>
+
+          <div class="new-coming" onclick="goToViewApplications()">
+              <div class="new-coming-child">
+                  <img src="img/document.png" alt="Document">
+                  <p>Application 5</p>
+              </div>
+              <div>
+                  <p>04/12</p>
+              </div>
+          </div>
+
+          <div class="new-coming" onclick="goToViewApplications()">
+              <div class="new-coming-child">
+                  <img src="img/document.png" alt="Document">
+                  <p>Application 6</p>
+              </div>
+              <div>
+                  <p>04/12</p>
+              </div>
+          </div>
+
+          <div class="new-coming" onclick="goToViewApplications()">
+              <div class="new-coming-child">
+                  <img src="img/document.png" alt="Document">
+                  <p>Application 7</p>
+              </div>
+              <div>
+                  <p>23/1</p>
+              </div>
+          </div>
+
+          <div class="new-coming" onclick="goToViewApplications()">
+              <div class="new-coming-child">
+                  <img src="img/document.png" alt="Document">
+                  <p>Application 8</p>
+              </div>
+              <div>
+                  <p>07/2</p>
+              </div>
+          </div>
+
+           
+          </div>
+    
+
+        </div>
+        <div class="new-opportunities content-2-children">
+                    <h3>Inbox</h3>
+                    <div class="incoming">
+
+                        <div class="new-coming job-btn" onclick="navigateToInbox()">
+                            <div class="new-coming-child">
+                                <img src="img/mail.png" alt="Document">
+                                <p>Working hours</p>
+                            </div>
+                            <div>
+                                <p>08/03</p>
+                            </div>
+                        </div>
+
+                        <div class="new-coming job-btn" onclick="navigateToInbox()">
+                            <div class="new-coming-child">
+                                <img src="img/mail.png" alt="Document">
+                                <p>New applications</p>
+                            </div>
+                            <div>
+                                <p>20/12</p>
+                            </div>
+                        </div>
+
+                    </div>
+        </div>
+
+      </div>
+
+      <div class="content-2-2">
+
+        <div class="announcements content-2-children">
+                    <h3>Partner Companies</h3>
+                    <div class="incoming">
+
+                        <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
+                            <div class="new-coming-child">
+                                <img src="img/company.png" alt="Document">
+                                <p>Google</p>
+                            </div>
+                            <div>
+                                <p>08/03</p>
+                            </div>
+                        </div>
+
+                        <div class="new-coming Announcement-btn" onclick="">
+                            <div class="new-coming-child">
+                                <img src="img/company.png" alt="Document">
+                                <p>Meta</p>
+                            </div>
+                            <div>
+                                <p>10/17</p>
+                            </div>
+                        </div>
+
+
+                        <div class="new-coming Announcement-btn" onclick="">
+                            <div class="new-coming-child">
+                                <img src="img/company.png" alt="Document">
+                                <p>Ülker</p>
+                            </div>
+                            <div>
+                                <p>08/03</p>
+                            </div>
+                        </div>
+
+                    </div>
+        </div>
+
+
+      </div>
+
   </div>
 
-
+  
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -115,6 +489,8 @@ if (!isset($_SESSION['empname'])) {
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
   <script src="js/main.js"></script>
+  <script src="index2.js"></script>
+
 
 </body>
 

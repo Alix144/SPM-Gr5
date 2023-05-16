@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION['empname'])) {
   header("location:emplogin.php");
 }
 ?>
@@ -9,7 +9,7 @@ if (!isset($_SESSION['username'])) {
 
 <head>
   <meta charset="utf-8">
-  <title>Student Home</title>
+  <title>Outgoing Messages</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -37,7 +37,7 @@ if (!isset($_SESSION['username'])) {
 
   <style>
     body {
-      background-color: rgb(4, 85, 85);
+      background-color: #134920;
       height: 100%;
       width: 100%;
       overflow: hidden;
@@ -238,17 +238,17 @@ if (!isset($_SESSION['username'])) {
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">Welcome Student</a></h1>
+        <h1><a href="#intro" class="scrollto">Inbox</a></h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="welcomestudent.php">Home</a></li>
-          <li><a href="new-application.php">New Application</a></li>
-          <li><a href="mainjobs.php">Find Internship</a></li>
-          <li><a href="appliedjobs.php">Applied Internships</a></li>
-          <li class="menu-active"><a href="inbox-st.php">Inbox</a></li>
-          <li><a href="logout2.php">Logout</a></li>
+            <li><a href="empwelcome.php">Home</a></li>
+            <li><a href="jobpost.php">Post Internship</a></li>
+            <li><a href="empjobstatus.php">Application Status</a></li>
+            <li><a href="view-applications.php">View Applications</a></li>
+		    <li class="menu-active"><a href="inbox-cc.php">Inbox</a></li>
+		    <li><a href="logout.php">Logout</a></li>
         </ul>
       </nav>
     </div>
@@ -260,9 +260,9 @@ if (!isset($_SESSION['username'])) {
     <div class="content content-2">
       <div class="msg-btns">
       <h1>Inbox</h1>
-        <a href="inbox-st.php" class="btn-get-started scrollto active">Incoming</a>
-        <a href="outgoing-st.php" class="btn-get-started scrollto">Outgoing</a>
-        <a href="new-msg-st.php" class="btn-get-started scrollto">New Message</a>
+        <a href="inbox-cc.php" class="btn-get-started scrollto">Incoming</a>
+        <a href="outgoing-cc.php" class="btn-get-started scrollto active">Outgoing</a>
+        <a href="new-msg-cc.php" class="btn-get-started scrollto">New Message</a>
       </div>
 
       <form action="">

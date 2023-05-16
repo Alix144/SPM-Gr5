@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION['empname'])) {
   header("location:emplogin.php");
 }
 ?>
@@ -9,7 +9,7 @@ if (!isset($_SESSION['username'])) {
 
 <head>
   <meta charset="utf-8">
-  <title>Student Home</title>
+  <title>New Message</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -37,7 +37,7 @@ if (!isset($_SESSION['username'])) {
 
   <style>
     body {
-      background-color: rgb(4, 85, 85);
+      background-color: #134920;
       height: 100%;
       width: 100%;
       overflow: hidden;
@@ -125,107 +125,56 @@ if (!isset($_SESSION['username'])) {
     }
 
     .active{
-          background: #fff;
-          color: #18d26e;
-        }
-      
-      
-    form{
-      height: 100%;
-      width: 60%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: #fff;
+      color: #18d26e;
     }
 
-    form input, form select{
-      background-color: rgb(255, 255, 255, 0.2);
-      border-radius: 10px;
-      width:100%;
 
-    }
+form{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-    #coordinator{
-      height: 8%
-    }
-    
-    #text{
-      margin-top:5px;
-      height: 50%
-    }
-    
-    h1{
-      margin-bottom: 100px; 
-      border-bottom: solid 2px #fff;
-    }
-    .new-coming:hover{
-        color: black;
-        cursor: pointer;
-        background-color: #18d26e;
-        border: none;
-        border-radius:5px;
-    }
-    
-    .coming{
-      padding-top: 5px;
-      margin-right: 5px;
-      display: flex;
-      flex-direction: column;
-      width: 35%;
-      height: 80%;
-      background-color: rgb(255, 255, 255, 0.2);
-      border-radius: 10px;
-      overflow-y: scroll;
-    }
-    
-    .show-coming{
-      display: flex;
-      flex-direction: column;
-      width: 65%;
-      height: 80%;
-      background-color: rgb(255, 255, 255, 0.2);
-      border-radius: 10px;
-    }
-    
-    .msgs{
-      margin: 0 auto;
-      padding: 5px;
-      padding-bottom: 30px;
-      margin-bottom: 10px;
-      width: 90%;
-    
-      display: flex;
-      align-content: center;
-      justify-content: space-around;
-      height: 30px;
-      color: rgb(0,0,0);
-      border-bottom: solid 1px rgb(41, 41, 41);
-    }
-    
-    .msgs:hover{
-      background-color: #18d26e;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-    
-    .msgs img{
-      width: 30px;
-      height: 30px;
-    }
-    
-    .msgs p{
-        display: inline;
-    
-    }
-    
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-      box-shadow: inset 0px 0 30px rgba(0, 0, 0, 1);
-      border-radius: 5px;
-    }
+form input, form select{
+  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: 10px;
+  width:100%;
+  
+}
+
+#coordinator{
+  height: 8%
+}
+
+#text{
+  margin-top:5px;
+  height: 50%
+}
+
+h1{
+  margin-bottom: 100px; 
+  border-bottom: solid 2px #fff;
+}
+.new-coming:hover{
+    color: black;
+    cursor: pointer;
+    background-color: #18d26e;
+    border: none;
+    border-radius:5px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0px 0 30px rgba(0, 0, 0, 1);
+  border-radius: 5px;
+}
   </style>
 
 </head>
@@ -238,17 +187,17 @@ if (!isset($_SESSION['username'])) {
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">Welcome Student</a></h1>
+        <h1><a href="#intro" class="scrollto">Inbox</a></h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="welcomestudent.php">Home</a></li>
-          <li><a href="new-application.php">New Application</a></li>
-          <li><a href="mainjobs.php">Find Internship</a></li>
-          <li><a href="appliedjobs.php">Applied Internships</a></li>
-          <li class="menu-active"><a href="inbox-st.php">Inbox</a></li>
-          <li><a href="logout2.php">Logout</a></li>
+        <li><a href="empwelcome.php">Home</a></li>
+            <li><a href="jobpost.php">Post Internship</a></li>
+            <li><a href="empjobstatus.php">Application Status</a></li>
+            <li><a href="view-applications.php">View Applications</a></li>
+		    <li class="menu-active"><a href="inbox-cc.php">Inbox</a></li>
+		    <li><a href="logout.php">Logout</a></li>
         </ul>
       </nav>
     </div>
@@ -260,25 +209,21 @@ if (!isset($_SESSION['username'])) {
     <div class="content content-2">
       <div class="msg-btns">
       <h1>Inbox</h1>
-        <a href="inbox-st.php" class="btn-get-started scrollto active">Incoming</a>
-        <a href="outgoing-st.php" class="btn-get-started scrollto">Outgoing</a>
-        <a href="new-msg-st.php" class="btn-get-started scrollto">New Message</a>
+        <a href="inbox-cc.php" class="btn-get-started scrollto">Incoming</a>
+        <a href="outgoing-cc.php" class="btn-get-started scrollto">Outgoing</a>
+        <a href="new-msg-cc.php" class="btn-get-started scrollto active">New Message</a>
       </div>
 
       <form action="">
-        <div class="coming">
-          <div class="msgs">
-            <img src="img/mail.png" alt="mail">
-            <p>Coordinator 1</p>
-          </div>
-
-          <div class="msgs">
-            <img src="img/mail.png" alt="mail">
-            <p>Coordinator 2</p>
-          </div>
-        </div>
-
-        <div class="show-coming"></div>
+        <select name="coordinator" id="coordinator">
+          <option value="volvo">Select</option>
+          <option value="saab">Someone</option>
+          <option value="opel">Dr. Kristin</option>
+          <option value="dr">dr</option>
+        </select>
+        
+        <input type="text" id="text" name="text"> <br><br>
+        <input type="submit" value="Submit" class="btn-get-started">
       </form>
 
     </div>

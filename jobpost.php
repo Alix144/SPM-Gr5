@@ -37,11 +37,20 @@
   <link href="css/style.css" rel="stylesheet">
     <style>
         body{
-            background: url("img/background.jpg");
+            background: #134920;
             background-size:cover;
             background-repeat:repeat-y;
             color:White;
+            overflow: ;
         }
+
+        #particles-js {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -10 !important;
+    }
+
         .box{
             background: rgba(0,0,0,0.1);
         }
@@ -60,8 +69,22 @@
 		}
 		
 		
-        .box{border:1px solid lightgrey;padding:20px;border-radius:5px;}
-        .box-sm{border:1px solid lightgrey;padding:5px;border-radius:5px;background-color:white;}
+        .box{    
+            padding:20px;
+            background: rgb(0, 0, 0, 0.6);
+        
+        }
+        .box-sm{
+            border:1px solid lightgrey;
+            padding:5px;
+            border-radius:5px;
+            background-color:white;
+            
+        }
+
+        .container1{
+           
+        }
     </style>
 	
 	
@@ -93,6 +116,7 @@
     
 </head>
 <body> 
+<div id="particles-js"></div>
 	<br><br><br><br><br>
 	<header id="header">
     <div class="container-fluid">
@@ -106,7 +130,8 @@
             <li><a href="empwelcome.php">Home</a></li>
             <li class="menu-active"><a href="jobpost.php">Post Internship</a></li>
             <li><a href="empjobstatus.php">Application Status</a></li>
-		    <li><a href="">Inbox</a></li>
+            <li><a href="view-applications.php">View Applications</a></li>
+		    <li><a href="inbox-cc.php">Inbox</a></li>
 		    <li><a href="logout.php">Logout</a></li>
         </ul>
       </nav>
@@ -119,15 +144,16 @@
     
 
     
-    <div style="text-align:center">
-    <h3 class="page-header">Internship Post Form</h3>
-    </div>
-    <br><br>
+
     
     <div class="container add_employee_form">
     <form action="" method="POST">
-        <h4 class="page-header" align="center">Fill The Form</h4>
         <div class="box">
+
+        <div style="text-align:center">
+    <h3 class="page-header">Announce Internship</h3>
+    </div>
+    <br>
             <div class="form-group">  
                   <div class="row">
 
@@ -187,39 +213,19 @@
                 </div>
             </div>
 
-            <div class="form-group">
-                <div class="row">
-                   
-                    
-                </div>
-              
-            </div>
+
 
             <div class="form-group">
                 <div class="row">
-                    
-	
-                    </div> 
-					
-                </div>
-                <div class="row">
-                    <div class="col-md-1"></div>
                     <div class="col-md-5"><p id="erremail"></p></div>
                     <div class="col-md-2"></div>
                     <div class="col-md-2"><p id="errnationality"></p></div>
                 </div>
             </div>
 
-             <div class="form-group">
-                <div class="row">
-                  
-                 </div>
-            </div>
-        </div>
-        
-        <br><br>
-        
-        <div class="form-group">
+ 
+
+            <div class="form-group">
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
@@ -228,12 +234,22 @@
 				<div class="col-md-4"></div>
             </div>
         </div>
+
+
+        </div>
+        
+        <br>
+        
     </form>
     </div>
+
+   
     
-  <script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/particles/particles.js"></script>
+  <script src="lib/particles/app.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
