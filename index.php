@@ -53,7 +53,7 @@
               <li><a href="studentlogin.php">Student</a></li>
               <li><a href="emplogin.php">Career Center</a></li>
               <li><a href="">Coordinator</a></li>
-              <li><a href="">Admin</a></li>
+              <li><a href="adminlogin.php">Admin</a></li>
             </ul>
           </li>
           <li class="menu-has-`children"><a href="studentreg.php">Registration</a>
@@ -81,7 +81,7 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h5>"Interns are like not-cut diamonds; They have flaws, some of them are totally worthless, but once you cut them well, they can become something great one day, And that’s what I’m doing, I’m cutting diamonds…"</h5>
-                <a href="jobs.php" class="btn-get-started scrollto">Find Your Internship</a>
+                <a href="studentlogin.php" class="btn-get-started scrollto">Login</a>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h5>Internships are very important part of our education program, first and foremost. In setting up professional internships, not only will we be able to offer students a chance to work with industry professionals, but the students also will be able to take the theory they learn in the classroom and put it into practice here, in whichever activity they’re focused.</h5>
-                <a href="jobs.php" class="btn-get-started scrollto">Find Your Internship</a>
+                <a href="studentlogin.php" class="btn-get-started scrollto">Login</a>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h5>“The only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it.” </h5>
-                <a href="jobs.php" class="btn-get-started scrollto">Find Your Internship</a>
+                <a href="studentlogin.php" class="btn-get-started scrollto">Login</a>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h5>“My advice for young people is, study what you love and intern in what you want to do. And I think it’s okay to pivot as many times as you need to."</h5>
-                <a href="jobs.php" class="btn-get-started scrollto">Find Your Internship</a>
+                <a href="studentlogin.php" class="btn-get-started scrollto">Login</a>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h5>"The goal is not to be successful, the goal is to be valuable. Once you're valuable, instead of chasing success, it will attract itself to you."</h5>
-                <a href="jobs.php" class="btn-get-started scrollto">Find Your Internship</a>
+                <a href="studentlogin.php" class="btn-get-started scrollto">Login</a>
               </div>
             </div>
           </div>

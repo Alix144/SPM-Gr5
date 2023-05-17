@@ -56,27 +56,29 @@ $username = $_SESSION['username'];
 		td {
 			margin: auto;
 			border: none;
-			/* border-radius: 20px; */
 			border-collapse: collapse;
 			text-align: center;
 			font-size: 16px;
 			table-layout: auto;
-			background-color: #e8edf0;
-			color: black;
+			background-color: rgb(0, 0, 0, 0.5);
+			color: #fff;
 			margin-top: 100px;
 		}
+
+
 
 		th,
 		td {
 			padding: 20px;
 			opacity: 0.9;
-			color: black;
+			color: #fff;
 
 		}
 
 		th {
-			background-color: cornflowerblue;
+			background-color: rgb(0, 0, 0, 0.8);
 			color: white;
+			border-bottom: solid 1px #fff;
 		}
 
 
@@ -84,6 +86,8 @@ $username = $_SESSION['username'];
 			background-color: rgb(174, 175, 177);
 			color: black;
 		}
+
+	
 
 		tr:hover {
 			background-color: black;
@@ -135,17 +139,9 @@ $username = $_SESSION['username'];
 
 
 
-	<div style="text-align:center">
+	<div style="text-align:center; margin-top: 40px;">
 		<h3>Internship List</h3>
-		<form method="POST">
-			<div style="text-align: center" class="mt-5">
-				<label>Search: </label>
-				<input type="text" placeholder="Type To Search" name="key" autocomplete="off" style="border-right:none; border-left: none; border-top:none;outline: none;border-bottom: 1px solid white;background-color:transparent; color: white">
 
-				<button type="submit" class="btn btn-light btn-xs" name="sub">
-					<span class="glyphicon glyphicon-search"></span> Search
-				</button>
-		</form>
 
 
 	</div>

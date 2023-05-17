@@ -61,22 +61,27 @@ $username = $_SESSION['username'];
 			text-align: center;
 			font-size: 16px;
 			table-layout: auto;
-			background-color: #e8edf0;
+			background-color: #;
 			color: black;
 			margin-top: 100px;
+		}
+
+		tr{
+			background: rgb(0, 0, 0, 0.6) !important;
 		}
 
 		th,
 		td {
 			padding: 20px;
 			opacity: 0.9;
-			color: black;
+			color: #fff;
 
 		}
 
 		th {
-			background-color: cornflowerblue;
+			background-color: rgb(0, 0, 0, 0.6);
 			color: white;
+			border-bottom: solid 1px #fff;
 		}
 
 
@@ -136,17 +141,9 @@ $username = $_SESSION['username'];
 
 
 
-	<div style="text-align:center">
+	<div style="text-align:center; margin-top: 40px;">
 		<h3>Applied Internships List</h3>
-		<form method="POST">
-			<div style="text-align: center" class="mt-5">
-				<label>Search: </label>
-				<input type="text" placeholder="Type To Search" name="key" autocomplete="off" style="border-right:none; border-left: none; border-top:none;outline: none;border-bottom: 1px solid white;background-color:transparent; color: white">
 
-				<button type="submit" class="btn btn-light btn-xs" name="sub">
-					<span class="glyphicon glyphicon-search"></span> Search
-				</button>
-		</form>
 
 
 	</div>

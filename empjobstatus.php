@@ -60,15 +60,16 @@
 			text-align: center;
 			font-size: 16px;
 			table-layout: auto;
-			background-color: ;
+			background: rgb(0, 0, 0, 0.5);
 			color: black;
 			margin-top: 100px;
 		}
 
-		table{
-			background: rgb(0, 0, 0, 0.6);
-		}
-		
+
+thead tr{
+	background: rgb(0, 0, 0, 0.6);
+}
+
 		th,td{
 			padding: 20px;
 			opacity: 0.9;
@@ -80,7 +81,6 @@
 			border-bottom: solid 1px #fff;
 			color: white;	
 		}
-		
 		
 		td:hover
 		{
@@ -145,7 +145,7 @@
 	
 	
    <table style="width:100%;" class="mt-5"> 
-   <div style="text-align:center">
+   <div style="text-align:center; margin-top: 40px;">
         <h3 >Internship Application Status List</h3>
 		<form method="POST">
 
