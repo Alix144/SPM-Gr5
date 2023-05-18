@@ -228,13 +228,13 @@
 
 
 <body>
-  <div id="particles-js"></div>
+  <!-- <div id="particles-js"></div> -->
   <header id="header">
 
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">Welcome Admin</a></h1>
+        <h1><a href="#intro" class="scrollto">Assign Instructor</a></h1>
       </div>
 
       <nav id="nav-menu-container">
@@ -269,11 +269,12 @@
         
       </div>
 
-     
-      <input type="submit" value="Save" class="btn-get-started">
+
+       <input type="submit" value="Save" class="btn-get-started"> 
      
     </div>
    
+    
    
     </div>
   <script src="lib/jquery/jquery.min.js"></script>

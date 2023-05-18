@@ -232,7 +232,7 @@ h1{
 
 
 <body>
-  <div id="particles-js"></div>
+  <!-- <div id="particles-js"></div> -->
   <header id="header">
 
     <div class="container-fluid">

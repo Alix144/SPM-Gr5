@@ -267,7 +267,7 @@ h1{
 
 
 <body>
-  <div id="particles-js"></div>
+  <!-- <div id="particles-js"></div> -->
   <header id="header">
 
     <div class="container-fluid">
@@ -309,7 +309,7 @@ h1{
         </div>
 
         <div class="show-coming">
-            <div class="st-info">
+            <div class="st-info" style="color:white;">
                 <h5>Name: </h5><p>Messi</p> <br>
                 <h5>ID: </h5><p>200000000</p> <br>
                 <h5>Email: </h5><p>messi@st.uskudar.edu.tr</p> <br>
@@ -322,7 +322,7 @@ h1{
             </div>
 
             <div class="sgk-btns">
-                <a href="" class="btn-get-started scrollto"><label for="myFile">Uppload SGK</label></a> <br>
+                <a href="" class="btn-get-started scrollto"><label for="myFile">Upload SGK</label></a> <br>
                 <input type="file" id="myFile" name="filename" hidden>
                 <a href="" class="btn-get-started scrollto">Send</a>
             </div>

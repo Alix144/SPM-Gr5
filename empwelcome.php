@@ -261,12 +261,12 @@ if (!isset($_SESSION['empname'])) {
 
 
 <body>
-  <div id="particles-js"></div>
+  <!-- <div id="particles-js"></div> -->
   <header id="header">
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">Welcome Career Center</a></h1>
+        <h1><a href="#intro" class="scrollto">Career Center Panel</a></h1>
       </div>
 
       <nav id="nav-menu-container">
@@ -284,7 +284,7 @@ if (!isset($_SESSION['empname'])) {
 
   <div class="findinternbtn text-center parent">
 
-    <div class="content content-1">
+    <div class="content content-1" style="color:white;">
       <div class="profile">
         <img src="img/elon.jpg" alt="">
         <div class="info">
@@ -301,7 +301,7 @@ if (!isset($_SESSION['empname'])) {
 
     </div>
 
-    <div class="content content-2">
+    <div class="content content-2" style="color:white;">
 
       <div class="content-2-1">
 
@@ -312,80 +312,80 @@ if (!isset($_SESSION['empname'])) {
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
                   <img src="img/document.png" alt="Document">
-                  <p>Application 1</p>
+                  <p style="color:white; font-weight:bold">Application 1</p>
               </div>
               <div>
-                  <p>04/12</p>
+                  <p style="color:white; font-weight:bold">04/12</p>
               </div>
           </div>
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
                   <img src="img/document.png" alt="Document">
-                  <p>Application 2</p>
+                  <p style="color:white; font-weight:bold">Application 2</p>
               </div>
               <div>
-                  <p>01/05</p>
+                  <p style="color:white; font-weight:bold">01/05</p>
               </div>
           </div>
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
                   <img src="img/document.png" alt="Document">
-                  <p>Application 3</p>
+                  <p style="color:white; font-weight:bold">Application 3</p>
               </div>
               <div>
-                  <p>04/12</p>
+                  <p style="color:white; font-weight:bold">04/12</p>
               </div>
           </div>
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
                   <img src="img/document.png" alt="Document">
-                  <p>Application 4</p>
+                  <p style="color:white; font-weight:bold">Application 4</p>
               </div>
               <div>
-                  <p>29/9</p>
+                  <p style="color:white; font-weight:bold">29/9</p>
               </div>
           </div>
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
                   <img src="img/document.png" alt="Document">
-                  <p>Application 5</p>
+                  <p style="color:white; font-weight:bold">Application 5</p>
               </div>
               <div>
-                  <p>04/12</p>
+                  <p style="color:white; font-weight:bold">04/12</p>
               </div>
           </div>
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
                   <img src="img/document.png" alt="Document">
-                  <p>Application 6</p>
+                  <p style="color:white; font-weight:bold">Application 6</p>
               </div>
               <div>
-                  <p>04/12</p>
+                  <p style="color:white; font-weight:bold">04/12</p>
               </div>
           </div>
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
                   <img src="img/document.png" alt="Document">
-                  <p>Application 7</p>
+                  <p style="color:white; font-weight:bold">Application 7</p>
               </div>
               <div>
-                  <p>23/1</p>
+                  <p style="color:white; font-weight:bold">23/1</p>
               </div>
           </div>
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
                   <img src="img/document.png" alt="Document">
-                  <p>Application 8</p>
+                  <p style="color:white; font-weight:bold">Application 8</p>
               </div>
               <div>
-                  <p>07/2</p>
+                  <p style="color:white; font-weight:bold">07/2</p>
               </div>
           </div>
 
@@ -401,20 +401,20 @@ if (!isset($_SESSION['empname'])) {
                         <div class="new-coming job-btn" onclick="navigateToInbox()">
                             <div class="new-coming-child">
                                 <img src="img/mail.png" alt="Document">
-                                <p>Working hours</p>
+                                <p style="color:white; font-weight:bold">Working hours</p>
                             </div>
                             <div>
-                                <p>08/03</p>
+                                <p style="color:white; font-weight:bold">08/03</p>
                             </div>
                         </div>
 
                         <div class="new-coming job-btn" onclick="navigateToInbox()">
                             <div class="new-coming-child">
                                 <img src="img/mail.png" alt="Document">
-                                <p>New applications</p>
+                                <p style="color:white; font-weight:bold">New applications</p>
                             </div>
                             <div>
-                                <p>20/12</p>
+                                <p style="color:white; font-weight:bold">20/12</p>
                             </div>
                         </div>
 
@@ -432,20 +432,20 @@ if (!isset($_SESSION['empname'])) {
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
                                 <img src="img/company.png" alt="Document">
-                                <p>Google</p>
+                                <p style="color:white; font-weight:bold">Google</p>
                             </div>
                             <div>
-                                <p>08/03</p>
+                                <p style="color:white; font-weight:bold">08/03</p>
                             </div>
                         </div>
 
                         <div class="new-coming Announcement-btn" onclick="">
                             <div class="new-coming-child">
                                 <img src="img/company.png" alt="Document">
-                                <p>Meta</p>
+                                <p style="color:white; font-weight:bold">Meta</p>
                             </div>
                             <div>
-                                <p>10/17</p>
+                                <p style="color:white; font-weight:bold">10/17</p>
                             </div>
                         </div>
 
@@ -453,10 +453,10 @@ if (!isset($_SESSION['empname'])) {
                         <div class="new-coming Announcement-btn" onclick="">
                             <div class="new-coming-child">
                                 <img src="img/company.png" alt="Document">
-                                <p>Ülker</p>
+                                <p style="color:white; font-weight:bold">Ülker</p>
                             </div>
                             <div>
-                                <p>08/03</p>
+                                <p style="color:white; font-weight:bold">08/03</p>
                             </div>
                         </div>
 

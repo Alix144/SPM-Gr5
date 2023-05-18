@@ -114,13 +114,13 @@ $username = $_SESSION['username'];
 	</style>
 </head>
 <body id="back">
-<div id="particles-js"></div>
+<!-- <div id="particles-js"></div> -->
 	<br><br><br><br>
 	<header id="header">
 		<div class="container-fluid">
 
 			<div id="logo" class="pull-left">
-				<h1><a href="#intro" class="scrollto">Internship List</a></h1>
+				<h1><a href="#intro" class="scrollto">Find Internships</a></h1>
 			</div>
 
 			<nav id="nav-menu-container">

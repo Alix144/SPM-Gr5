@@ -166,10 +166,10 @@ if (isset($_SESSION['username'])) {
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="index.php">Home</a></li>
-          <li class="menu-active"><a href="#intro">Student</a></li>
-          <li> <a href="emplogin.php">Career Center</a> </li>
+          <li><a href="studentlogin.php">Student</a></li>
+          <li> <a href="emplogin.php">Career Center</a></li>
           <li><a href="">Coordinator</a></li>
-          <li><a href="">Admin</a></li>
+          <li class="menu-active"><a href="adminlogin.php">Admin</a></li>
         </ul>
       </nav>
     </div>

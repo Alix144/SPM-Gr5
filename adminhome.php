@@ -285,13 +285,13 @@
 
 
 <body>
-  <div id="particles-js"></div>
+  <!-- <div id="particles-js"></div> -->
   <header id="header">
 
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">Welcome Admin</a></h1>
+        <h1><a href="#intro" class="scrollto">Admin Panel</a></h1>
       </div>
 
       <nav id="nav-menu-container">
@@ -415,17 +415,31 @@
 
            
           </div>
-    
-
+          
+ 
         </div>
         <div class="new-opportunities content-2-children">
                     
                     <div class="incomin">
-                     <h4>Users</h4>
+                     <h4>Employees</h4>
                         <div class="new-comin" onclick="">
                             <div class="new-comin-child">
-                              
-                                <h2>500</h2>
+                            <?php
+                            $link = mysqli_connect("localhost", "root", "", "intern") or die($link);
+
+                            $sql = "SELECT * from employee";
+
+                              if ($result = mysqli_query($link, $sql)) {
+
+                                  // Return the number of rows in result set
+                                  $rowcount = mysqli_num_rows( $result );
+                                  
+                                  // Display result
+                                  printf("%d\n", $rowcount);
+                              }
+                 
+                            mysqli_close($link);
+                            ?>
                             </div>
                             
                         </div>
@@ -436,18 +450,48 @@
                         <div class="new-comin" onclick="">
                             <div class="new-comin-child">
                               
-                                <h2>1</h2>
+                            <?php
+                            $link = mysqli_connect("localhost", "root", "", "intern") or die($link);
+
+                            $sql = "SELECT * from adminnn";
+
+                              if ($result = mysqli_query($link, $sql)) {
+
+                                  // Return the number of rows in result set
+                                  $rowcount = mysqli_num_rows( $result );
+                                  
+                                  // Display result
+                                  printf("%d\n", $rowcount);
+                              }
+                 
+                            mysqli_close($link);
+                            ?>
                             </div>
                             
                         </div>
 
                         </div>
                          <div class="incomin">
-                     <h4>Employees</h4>
+                     <h4>Coordinators</h4>
                         <div class="new-comin" onclick="">
                             <div class="new-comin-child">
                               
-                                <h2>100</h2>
+                            <?php
+                            $link = mysqli_connect("localhost", "root", "", "intern") or die($link);
+
+                            $sql = "SELECT * from coordinator"; // this will work after coordinator table is filled with some data
+
+                              if ($result = mysqli_query($link, $sql)) {
+
+                                  // Return the number of rows in result set
+                                  $rowcount = mysqli_num_rows( $result );
+                                  
+                                  // Display result
+                                  printf("%d\n", $rowcount);
+                              }
+                 
+                            mysqli_close($link);
+                            ?>
                             </div>
                             
                         </div>
@@ -551,23 +595,28 @@
         </div>
 
         <div class="doc content-2-children">
-                    <div class="incomin">
-                     <h4>Coordinators</h4>
-                        <div class="new-comin" onclick="">
-                            <div class="new-comin-child">
-                              
-                                <h2>100</h2>
-                            </div>
-                            
-                        </div>
-
-                        </div>
+                    
                          <div class="incomin">
                      <h4>Students</h4>
                         <div class="new-comin" onclick="">
                             <div class="new-comin-child">
                               
-                                <h2>299</h2>
+                            <?php
+                            $link = mysqli_connect("localhost", "root", "", "intern") or die($link);
+
+                            $sql = "SELECT * from student";
+
+                              if ($result = mysqli_query($link, $sql)) {
+
+                                  // Return the number of rows in result set
+                                  $rowcount = mysqli_num_rows( $result );
+                                  
+                                  // Display result
+                                  printf("%d\n", $rowcount);
+                              }
+                 
+                            mysqli_close($link);
+                            ?>
                             </div>
                             
                         </div>

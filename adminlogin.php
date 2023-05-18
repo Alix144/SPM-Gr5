@@ -2,7 +2,7 @@
 
 session_start();
 if (isset($_SESSION['username'])) {
-  header("location:welcomestudent.php");
+  header("location:adminhome.php");
 }
 
 ?>
@@ -185,7 +185,7 @@ if (isset($_SESSION['username'])) {
         <input data-toggle="password" data-placement="after" class="form-control" type="password" placeholder="Enter Password" data-eye-class="material-icons" data-eye-open-class="visibility" data-eye-close-class="visibility_off" data-eye-class-position-inside="true" name="pass" id="pass">
         <br><br>
         <input type="submit" id="btn" name="submit" value="Login">
-<a href="adminhome.php">admin</a>
+<a href="adminhome.php"></a>
 
         <!-- <u><a href="#" data-toggle="modal" data-target="#myModal"> Have you forgot password</u> ? </a> -->
 
@@ -355,7 +355,7 @@ if (isset($_POST['submit'])) {
   $username = mysqli_real_escape_string($link, $username);
   $password = mysqli_real_escape_string($link, $password);
 
-  $result = mysqli_query($link, "select * from student where username='$username' and pass='$pd'") or die("failed to query database" . mysqli_error($link));
+  $result = mysqli_query($link, "select * from adminnn where username='$username' and pass='$pd'") or die("failed to query database" . mysqli_error($link));
 
   if (mysqli_num_rows($result) > 0) {
     session_start();
@@ -364,7 +364,7 @@ if (isset($_POST['submit'])) {
       echo "<script>alert('wrong')</script>";
     } else {
       echo "<script>alert('Login Successful')</script>";
-      echo "<script>location.href='welcomestudent.php'</script>";
+      echo "<script>location.href='adminhome.php'</script>";
     }
   } else {
     echo "<script>alert('Invalid ID or Password.')</script>";

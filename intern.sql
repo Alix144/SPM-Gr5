@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 09, 2021 at 09:48 AM
--- Server version: 10.4.10-MariaDB
--- PHP Version: 7.3.12
+-- Anamakine: 127.0.0.1
+-- Üretim Zamanı: 18 May 2023, 19:03:05
+-- Sunucu sürümü: 10.4.28-MariaDB
+-- PHP Sürümü: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,13 +18,57 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `intern`
+-- Veritabanı: `intern`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `employee`
+-- Tablo için tablo yapısı `adminn`
+--
+
+CREATE TABLE `adminn` (
+  `sname` varchar(20) NOT NULL,
+  `mobile` varchar(20) NOT NULL,
+  `sid` int(20) NOT NULL,
+  `10th_marks` varchar(25) NOT NULL,
+  `12th_marks` varchar(25) NOT NULL,
+  `grad_marks` varchar(25) NOT NULL,
+  `gender` varchar(10) NOT NULL,
+  `m_status` varchar(30) NOT NULL,
+  `partner_name` varchar(30) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `pass` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Tablo döküm verisi `adminn`
+--
+
+INSERT INTO `adminn` (`sname`, `mobile`, `sid`, `10th_marks`, `12th_marks`, `grad_marks`, `gender`, `m_status`, `partner_name`, `username`, `pass`) VALUES
+('yusuf', '9047473874', 17, '100', '50', '90', 'male', 'Unmarried', '', 'yusuf', 'qwertyuiopedfvbnpojhg37e24f16ce915e7b6496daf5552ac311de3c5ba7ghjklcvbnm'),
+('ali', '9055283726', 18, '100', '100', '100', 'male', 'Unmarried', '', 'ali', 'qwertyuiopedfvbnpojhg40bd001563085fc35165329ea1ff5c5ecbdbbeefghjklcvbnm');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `coordinator`
+--
+
+CREATE TABLE `coordinator` (
+  `cid` varchar(25) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `sid` int(20) NOT NULL,
+  `c_username` varchar(25) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `gender` varchar(10) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `mobile` varchar(20) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `city` varchar(25) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `pass` varchar(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `employee`
 --
 
 CREATE TABLE `employee` (
@@ -35,20 +78,20 @@ CREATE TABLE `employee` (
   `pos` varchar(30) NOT NULL,
   `city` varchar(25) NOT NULL,
   `pass` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `employee`
+-- Tablo döküm verisi `employee`
 --
 
 INSERT INTO `employee` (`eid`, `ename`, `cname`, `pos`, `city`, `pass`) VALUES
-('bigw', 'Bigwonder', 'bigwonder@gmail.com', '8523961423', 'Bangalore', 'qwertyuiopedfvbnpojhgca0e46bc574ddf8cf7f07fe99a257aaeb142df00ghjklcvbnm'),
-('vmind', 'VirtualMind', 'virtualmind@gmail.com', '8652455612', 'Mumbai', 'qwertyuiopedfvbnpojhgf48d254310b6fd01a207284557325124059a606bghjklcvbnm');
+('1000', 'GRFIVE', 'emredatan@gmail.com', '1000', 'Mumbai', 'qwertyuiopedfvbnpojhg40bd001563085fc35165329ea1ff5c5ecbdbbeefghjklcvbnm'),
+('99', 'uskudar', 'career@cc.uskudar.edu.tr', '5532835848', '?STANBUL', 'qwertyuiopedfvbnpojhg40bd001563085fc35165329ea1ff5c5ecbdbbeefghjklcvbnm');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `job`
+-- Tablo için tablo yapısı `job`
 --
 
 CREATE TABLE `job` (
@@ -60,22 +103,20 @@ CREATE TABLE `job` (
   `sal` varchar(20) NOT NULL,
   `uname` varchar(25) NOT NULL,
   `eid` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `job`
+-- Tablo döküm verisi `job`
 --
 
 INSERT INTO `job` (`jid`, `cname`, `jdesc`, `loc`, `jpost`, `sal`, `uname`, `eid`) VALUES
-('bigw1', 'Bigwonder', '1. Designing and building the website front end\r\n2. Creating the website architecture\r\n3. Designing and managing the website backend including database and server integration', 'Bangalore', 'Web Development', '5000', '0,pmanasi', 'bigw'),
-('bigw2', 'Bigwonder', '1. Working on UI of mobile application ( Android or iOS )\r\n2. Working on backend of the mobile application ( Android or iOS )', 'Bangalore', 'Mobile App Developme', '2000', '0', 'bigw'),
-('vmind1', 'VirtualMind', '1. Analyzing data, developing predictive algorithms, designing, and recommending code algorithms using\r\nadvanced machine learning algorithms\r\n2. Designing, developing, and testing sales recommendation solutions\r\n3. Performing explanatory data analysis\r\n4. Preparing and analyzing data & identifying patterns', 'Mumbai', 'Machine Learning', '1000', '0', 'vmind'),
-('vmind2', 'VirtualMind', '1. Building a data analysis platform on Django\r\n2. Building ML models to analyze data and sending insights to customers\r\n3. Working on the development of web-based platforms using HTML and CSS', 'Mumbai', 'Data Science(Django)', '2000', '0,pmanasi,pvrushali', 'vmind');
+('1', 'Meta', 'web developer', 'istanbul', 'developer', '5000', '0,ali', '1000'),
+('12', 'google', 'asdfjah;s', 'istanbul', 'goolge', '500000000', '0', '99');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `student`
+-- Tablo için tablo yapısı `student`
 --
 
 CREATE TABLE `student` (
@@ -90,44 +131,73 @@ CREATE TABLE `student` (
   `partner_name` varchar(30) NOT NULL,
   `username` varchar(50) NOT NULL,
   `pass` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `student`
+-- Tablo döküm verisi `student`
 --
 
 INSERT INTO `student` (`sname`, `mobile`, `sid`, `10th_marks`, `12th_marks`, `grad_marks`, `gender`, `m_status`, `partner_name`, `username`, `pass`) VALUES
-('Vrushali', '7785125645', 14, '85', '76', '65', 'female', 'Unmarried', '', 'pvrushali', 'qwertyuiopedfvbnpojhg46bb56568d6d2e09c93f84a0e1771e3f04e0786cghjklcvbnm'),
-('Manasi', '9158200692', 13, '89', '77', '66', 'female', 'Unmarried', '', 'pmanasi', 'qwertyuiopedfvbnpojhg89cc476073cdc03fc26699f1dd9be12e8d339bafghjklcvbnm');
+('yusuf', '9047473874', 17, '100', '50', '90', 'male', 'Unmarried', '', 'yusuf', 'qwertyuiopedfvbnpojhg37e24f16ce915e7b6496daf5552ac311de3c5ba7ghjklcvbnm'),
+('ali', '9055283726', 18, '100', '100', '100', 'male', 'Unmarried', '', 'ali', 'qwertyuiopedfvbnpojhg40bd001563085fc35165329ea1ff5c5ecbdbbeefghjklcvbnm');
 
 --
--- Indexes for dumped tables
+-- Dökümü yapılmış tablolar için indeksler
 --
 
 --
--- Indexes for table `employee`
+-- Tablo için indeksler `adminn`
 --
-ALTER TABLE `employee`
-  ADD PRIMARY KEY (`eid`);
-
---
--- Indexes for table `student`
---
-ALTER TABLE `student`
+ALTER TABLE `adminn`
+  ADD PRIMARY KEY (`sid`),
   ADD UNIQUE KEY `email` (`mobile`),
   ADD UNIQUE KEY `sid` (`sid`),
   ADD UNIQUE KEY `username` (`username`),
   ADD UNIQUE KEY `mobile` (`mobile`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- Tablo için indeksler `coordinator`
+--
+ALTER TABLE `coordinator`
+  ADD PRIMARY KEY (`cid`);
+
+--
+-- Tablo için indeksler `employee`
+--
+ALTER TABLE `employee`
+  ADD PRIMARY KEY (`eid`);
+
+--
+-- Tablo için indeksler `job`
+--
+ALTER TABLE `job`
+  ADD PRIMARY KEY (`jid`);
+
+--
+-- Tablo için indeksler `student`
+--
+ALTER TABLE `student`
+  ADD PRIMARY KEY (`sid`),
+  ADD UNIQUE KEY `email` (`mobile`),
+  ADD UNIQUE KEY `sid` (`sid`),
+  ADD UNIQUE KEY `username` (`username`),
+  ADD UNIQUE KEY `mobile` (`mobile`);
+
+--
+-- Dökümü yapılmış tablolar için AUTO_INCREMENT değeri
 --
 
 --
--- AUTO_INCREMENT for table `student`
+-- Tablo için AUTO_INCREMENT değeri `adminn`
+--
+ALTER TABLE `adminn`
+  MODIFY `sid` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- Tablo için AUTO_INCREMENT değeri `student`
 --
 ALTER TABLE `student`
-  MODIFY `sid` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `sid` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

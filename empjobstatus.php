@@ -114,7 +114,7 @@ thead tr{
     </style>
 </head>
 <body id="back">
-<div id="particles-js"></div>
+<!-- <div id="particles-js"></div> -->
 	<br><br><br><br>
 	<header id="header">
     <div class="container-fluid">
