@@ -49,7 +49,8 @@ if (isset($_SESSION['username'])) {
   <style>
     body {
       /* background-color: #b61924; */
-      background-color: rgb(4, 85, 85); 
+      background-image: linear-gradient(to bottom right, rgb(4, 85, 85), cyan);
+      height: 100vh;
     }
 
     h1,
@@ -166,10 +167,10 @@ if (isset($_SESSION['username'])) {
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="index.php">Home</a></li>
-          <li><a href="studentlogin.php">Student</a></li>
+          <li class='menu-active'><a href="studentlogin.php">Student</a></li>
           <li> <a href="emplogin.php">Career Center</a></li>
           <li><a href="">Coordinator</a></li>
-          <li class="menu-active"><a href="adminlogin.php">Admin</a></li>
+          <li><a href="adminlogin.php">Admin</a></li>
         </ul>
       </nav>
     </div>

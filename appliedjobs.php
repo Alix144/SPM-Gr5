@@ -38,9 +38,8 @@ $username = $_SESSION['username'];
 
 	<style>
 		body {
-			background: rgb(4, 85, 85);
+			background-image: linear-gradient(to bottom right, rgb(4, 85, 85), cyan);
 			background-size: cover;
-			background-repeat: no-repeat;
 			color: white;
 		}
 

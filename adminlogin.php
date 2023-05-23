@@ -48,8 +48,8 @@ if (isset($_SESSION['username'])) {
 
   <style>
     body {
-      /* background-color: #b61924; */
-      background-color: rgb(4, 85, 85); 
+      background-image: linear-gradient(to bottom right, #34104a, #c251b3);
+      height: 100vh;
     }
 
     h1,

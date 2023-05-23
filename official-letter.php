@@ -37,7 +37,7 @@ if (!isset($_SESSION['username'])) {
 
   <style>
     body {
-      background-color: rgb(4, 85, 85);
+      background-image: linear-gradient(to bottom right, rgb(4, 85, 85), cyan);
       height: 100%;
       width: 100%;
       overflow: hidden;
@@ -47,12 +47,6 @@ if (!isset($_SESSION['username'])) {
       position: sticky !important;
     }
     /* ************ Particle JS ************ */
-    #particles-js {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      z-index: -10 !important;
-    }
 
     .findinternbtn button {
       background: white;
@@ -172,7 +166,6 @@ h1{
 
 
 <body>
-  <div id="particles-js"></div>
   <header id="header">
 
     <div class="container-fluid">

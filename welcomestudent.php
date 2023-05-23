@@ -37,7 +37,8 @@ if (!isset($_SESSION['username'])) {
 
   <style>
     body {
-      background-color: rgb(4, 85, 85);
+      background-color: ;
+      background-image: linear-gradient(to bottom right, rgb(4, 85, 85), cyan);
       height: 100%;
       width: 100%;
       overflow: ;
@@ -54,6 +55,10 @@ if (!isset($_SESSION['username'])) {
       z-index: -10 !important;
     }
 
+    .info *{
+      color: #fff;
+      font-weight: bold;
+    }
     .findinternbtn button {
       background: white;
       border-radius: 30px;
@@ -203,8 +208,9 @@ if (!isset($_SESSION['username'])) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(255, 255, 255, 0.5);
-    border-bottom: solid 1px rgb(41, 41, 41);
+    color: #fff;
+    font-weight: bold;
+    border-bottom: solid 1px black;
 }
 
 .new-coming img{

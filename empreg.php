@@ -31,9 +31,9 @@
     <link href="css/style.css" rel="stylesheet">
     <style>
         body {
-            background: url("img/background.jpg");
+            background-image: linear-gradient(to bottom right, #134920, #65c270);
+            height: 100vh;
             background-size: cover;
-            background-repeat: repeat-y;
             color: white;
         }
 

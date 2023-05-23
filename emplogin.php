@@ -42,7 +42,8 @@ if(isset($_SESSION['empname']))
 	<style>
 		
 body{
-  background-color: #134920;
+  background-image: linear-gradient(to bottom right, #134920, #65c270);
+  height: 100vh;
 }
 
 		h1,h2,h3,h4{

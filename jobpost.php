@@ -37,11 +37,12 @@
   <link href="css/style.css" rel="stylesheet">
     <style>
         body{
-            background: #134920;
+            background-image: linear-gradient(to bottom right, #134920, #65c270);
             background-size:cover;
-            background-repeat:repeat-y;
+            background-repeat:;
             color:White;
             overflow: ;
+            height: 100vh;
         }
 
         #particles-js {

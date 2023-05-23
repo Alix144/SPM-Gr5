@@ -37,21 +37,18 @@
 
   <style>
     body {
-      background-color: rgb(4, 85, 85);
+      background-image: linear-gradient(to bottom right, #34104a, #c251b3);
       height: 100%;
       width: 100%;
-      overflow: ;
     }
 
     header{
       position: sticky !important;
     }
-    /* ************ Particle JS ************ */
-    #particles-js {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      z-index: -10 !important;
+
+    .info *{
+      color: #fff;
+      font-weight: bold;
     }
 
     .findinternbtn button {
@@ -210,7 +207,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(255, 255, 255, 0.5);
+    color: #fff;
+    font-weight: bold;
     border-bottom: solid 1px rgb(41, 41, 41);
     text-align:center;
 }
@@ -234,8 +232,13 @@
     padding:5px;
     
 }
+
+.new-comin div{
+color:#fff;
+font-weight: bold;
+}
  .incomin{
-    margin-bottom: -125px;
+    margin-bottom: -45px;
     padding: 5px;
     width: 95%;
     height: 75%;
@@ -471,32 +474,7 @@
                         </div>
 
                         </div>
-                         <div class="incomin">
-                     <h4>Coordinators</h4>
-                        <div class="new-comin" onclick="">
-                            <div class="new-comin-child">
-                              
-                            <?php
-                            $link = mysqli_connect("localhost", "root", "", "intern") or die($link);
 
-                            $sql = "SELECT * from coordinator"; // this will work after coordinator table is filled with some data
-
-                              if ($result = mysqli_query($link, $sql)) {
-
-                                  // Return the number of rows in result set
-                                  $rowcount = mysqli_num_rows( $result );
-                                  
-                                  // Display result
-                                  printf("%d\n", $rowcount);
-                              }
-                 
-                            mysqli_close($link);
-                            ?>
-                            </div>
-                            
-                        </div>
-
-                        </div>
                         
 
 
@@ -596,6 +574,33 @@
 
         <div class="doc content-2-children">
                     
+        <div class="incomin">
+                     <h4>Coordinators</h4>
+                        <div class="new-comin" onclick="">
+                            <div class="new-comin-child">
+                              
+                            <?php
+                            $link = mysqli_connect("localhost", "root", "", "intern") or die($link);
+
+                            $sql = "SELECT * from coordinator"; // this will work after coordinator table is filled with some data
+
+                              if ($result = mysqli_query($link, $sql)) {
+
+                                  // Return the number of rows in result set
+                                  $rowcount = mysqli_num_rows( $result );
+                                  
+                                  // Display result
+                                  printf("%d\n", $rowcount);
+                              }
+                 
+                            mysqli_close($link);
+                            ?>
+                            </div>
+                            
+                        </div>
+
+                        </div>
+
                          <div class="incomin">
                      <h4>Students</h4>
                         <div class="new-comin" onclick="">

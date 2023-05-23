@@ -37,7 +37,7 @@ if (!isset($_SESSION['username'])) {
 
   <style>
     body {
-      background-color: rgb(4, 85, 85);
+      background-image: linear-gradient(to bottom right, rgb(4, 85, 85), cyan);
       height: 100%;
       width: 100%;
       overflow: hidden;

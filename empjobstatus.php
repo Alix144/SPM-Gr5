@@ -39,9 +39,9 @@
 		
 		
         body{
-            background: #134920;
+			background-image: linear-gradient(to bottom right, #134920, #65c270);
             background-size:cover;
-            background-repeat:no-repeat;
+            background-repeat:;
             color:white;
         }
 		

@@ -32,9 +32,10 @@
   <link href="css/style.css" rel="stylesheet">
     <style>
         body{
-            background: url("img/background.jpg");
+            background-image: linear-gradient(to bottom right, rgb(4, 85, 85), cyan);
+            height: 100vh;
             background-size:cover;
-            background-repeat:repeat-y;
+            background-repeat:;
             color:white;
         }
         .box{

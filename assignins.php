@@ -37,7 +37,7 @@
 
   <style>
     body {
-      background-color: rgb(4, 85, 85);
+      background-image: linear-gradient(to bottom right, #34104a, #c251b3);
       height: 100%;
       width: 100%;
       overflow: hidden;
@@ -45,13 +45,6 @@
 
     header{
       position: sticky !important;
-    }
-    /* ************ Particle JS ************ */
-    #particles-js {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      z-index: -10 !important;
     }
 
     
@@ -75,7 +68,7 @@
   height: 60px;
   padding: 0 20px;
   font-size: 22px;
-  background:#20B2AA;
+  background:#18d26e;
   border-radius: 7px;
   justify-content: space-evenly;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -154,7 +147,7 @@
 }
 .options li:hover, li.selected{
   border-radius: 5px;
-  background:#20B2AA ;
+  background:#18d26e ;
 }
     .content-2{
       width: 80%;
@@ -228,7 +221,6 @@
 
 
 <body>
-  <!-- <div id="particles-js"></div> -->
   <header id="header">
 
     <div class="container-fluid">
