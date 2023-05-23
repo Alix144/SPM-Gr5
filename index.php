@@ -52,7 +52,7 @@
             <ul>
               <li><a href="studentlogin.php">Student</a></li>
               <li><a href="emplogin.php">Career Center</a></li>
-              <li><a href="">Coordinator</a></li>
+              <li><a href="coo-login.php">Coordinator</a></li>
               <li><a href="adminlogin.php">Admin</a></li>
             </ul>
           </li>

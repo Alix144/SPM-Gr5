@@ -42,7 +42,7 @@ if(isset($_SESSION['empname']))
 	<style>
 		
 body{
-  background-image: linear-gradient(to bottom right, #134920, #65c270);
+  background-image: linear-gradient(to bottom right, #543380, #2f96d6);
   height: 100vh;
 }
 
@@ -167,15 +167,15 @@ input[type="password"]
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">Career Center Login</a></h1>
+        <h1><a href="#intro" class="scrollto">Coordinator Login</a></h1>
       </div>
 		
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="index.php">Home</a></li>
           <li><a href="studentlogin.php">Student</a></li>
-          <li class="menu-active"><a href="emplogin.php">Career Center</a></li>
-          <li><a href="coo-login.php">Coordinator</a></li>
+          <li><a href="emplogin.php">Career Center</a></li>
+          <li class="menu-active"><a href="coordinator.php">Coordinator</a></li>
           <li><a href="adminlogin.php">Admin</a></li>
         </ul>
       </nav>
@@ -183,13 +183,13 @@ input[type="password"]
 		
 		<div class="login-box">
         <!-- <img src="img/Admin.png" class="avatar" alt="Image Not Found"> -->
-        <h2><b>Career Center</b></h2>
+        <h2><b>Coordinator</b></h2>
         <form action="#" method="POST">
 			<br>
-            <p> Career Center ID  </p> 
-            <input type="text" id="user" placeholder="Enter Career Center ID" name="user" autocomplete="off" >
+            <p> Coordinator ID  </p> 
+            <input type="text" id="user" placeholder="Enter Coordinator ID" name="user" autocomplete="off" >
 			<br><br>
-            <p> Career Center Password </p>
+            <p> Coordinator Password </p>
       	<input data-toggle="password"
         data-placement="after"
         class="form-control"
@@ -216,79 +216,13 @@ input[type="password"]
     })
   </script>
 		
-			
+			<a href="coordinator.php">temp</a>
         </form>      
         </div>
   </header>
 	
 	
 	
-	<!-- <section id="intro">
-		
-    <div class="intro-container">
-      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
-
-        <ol class="carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-			
-          <div class="carousel-item active">
-			 
-            <div class="carousel-background"><img src="img/intro-carousel/19.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/17.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-               
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/21.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/22.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/23.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-
-        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-
-      </div>
-    </div>
-	</section>	 -->
 		
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
@@ -340,12 +274,12 @@ $result=mysqli_query($link,"select * from employee where eid='$username' and pas
 		else
 		{
 			 //echo "<script>alert('Login Successful.')</script>";
-			 echo "<script>location.href='empwelcome.php'</script>";
+			 echo "<script>location.href='coordinator.php'</script>";
 		}
 	}
 	else
 	{
-		echo "<script>alert('Invalid ID or Password. You are Employee login page if you are not employee then go to employee Login.')</script>";
+		echo "<script>alert('Invalid ID or Password. You are in the coordinator login page if you are not employee then go to employee Login.')</script>";
 	}
 		
 }

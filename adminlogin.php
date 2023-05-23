@@ -168,7 +168,7 @@ if (isset($_SESSION['username'])) {
           <li><a href="index.php">Home</a></li>
           <li><a href="studentlogin.php">Student</a></li>
           <li> <a href="emplogin.php">Career Center</a></li>
-          <li><a href="">Coordinator</a></li>
+          <li><a href="coo-login.php">Coordinator</a></li>
           <li class="menu-active"><a href="adminlogin.php">Admin</a></li>
         </ul>
       </nav>

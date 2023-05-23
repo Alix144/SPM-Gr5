@@ -1,15 +1,15 @@
 <?php
-session_start();
-if (!isset($_SESSION['username'])) {
-  header("location:emplogin.php");
-}
+// session_start();
+// if (!isset($_SESSION['username'])) {
+//   header("location:emplogin.php");
+// }
 ?>
 <!doctype html>
 <html>
 
 <head>
   <meta charset="utf-8">
-  <title>Student Home</title>
+  <title>Coordinator Inbox</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -37,7 +37,7 @@ if (!isset($_SESSION['username'])) {
 
   <style>
     body {
-      background-color: rgb(4, 85, 85);
+      background-image: linear-gradient(to bottom right, #543380, #2f96d6);
       height: 100%;
       width: 100%;
       overflow: hidden;
@@ -106,15 +106,10 @@ if (!isset($_SESSION['username'])) {
       width: 80%;
       height: 70%;
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
     }
 
-    h3{
-        margin-top: 10px;
-        border-bottom: solid 2px #fff;
-    }
 
     .msg-btns{
       height: 100%;
@@ -129,7 +124,7 @@ if (!isset($_SESSION['username'])) {
       width: 100%;
     }
 
-.active{
+    .active{
       background: #fff;
       color: #18d26e;
     }
@@ -137,8 +132,9 @@ if (!isset($_SESSION['username'])) {
 
 form{
   height: 100%;
-  width: 60%;
+  width: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -171,58 +167,6 @@ h1{
     border-radius:5px;
 }
 
-.coming{
-  padding-top: 5px;
-  margin-right: 5px;
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-  height: 90%;
-  background-color: rgb(255, 255, 255, 0.2);
-  border-radius: 10px;
-  overflow-y: scroll;
-}
-
-.show-coming{
-  display: flex;
-  flex-direction: column;
-  width: 65%;
-  height: 90%;
-  background-color: rgb(255, 255, 255, 0.2);
-  border-radius: 10px;
-}
-
-.msgs{
-  margin: 0 auto;
-  padding: 5px;
-  padding-bottom: 30px;
-  margin-bottom: 10px;
-  width: 90%;
-
-  display: flex;
-  align-content: center;
-  justify-content: space-around;
-  height: 30px;
-  color: rgb(0,0,0);
-  border-bottom: solid 1px rgb(41, 41, 41);
-}
-
-.msgs:hover{
-  background-color: #18d26e;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.msgs img{
-  width: 30px;
-  height: 30px;
-}
-
-.msgs p{
-    display: inline;
-
-}
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -237,21 +181,21 @@ h1{
 
 
 <body>
+  <!-- <div id="particles-js"></div> -->
   <header id="header">
 
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">Welcome Student</a></h1>
+        <h1><a href="#intro" class="scrollto">Coordinator Inbox</a></h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="welcomestudent.php">Home</a></li>
-          <li><a href="new-application.php">New Application</a></li>
-          <li><a href="mainjobs.php">Find Internship</a></li>
-          <li><a href="appliedjobs.php">Applied Internships</a></li>
-          <li><a href="inbox-st.php">Inbox</a></li>
+        <li><a href="coordinator.php">Home</a></li>
+          <li><a href="view-app-coo.php">View Applications</a></li>
+          <li><a href="announce-co.php">Announce</a></li>
+          <li class="menu-active"><a href="inbox-co.php">Inbox</a></li>
           <li><a href="logout2.php">Logout</a></li>
         </ul>
       </nav>
@@ -262,22 +206,23 @@ h1{
 
 
     <div class="content content-2">
-    <h3>Announcements</h3>
+      <div class="msg-btns">
+      <h1>Inbox</h1>
+        <a href="inbox-co.php" class="btn-get-started scrollto">Incoming</a>
+        <a href="outgoing-co.php" class="btn-get-started scrollto">Outgoing</a>
+        <a href="new-msg-co.php" class="btn-get-started scrollto active">New Message</a>
+      </div>
 
       <form action="">
-        <div class="coming">
-          <div class="msgs">
-            <img src="img/announcement.png" alt="mail">
-            <p>Documents re..</p>
-          </div>
-
-          <div class="msgs">
-            <img src="img/announcement.png" alt="mail">
-            <p>Attention..</p>
-          </div>
-        </div>
-
-        <div class="show-coming"></div>
+        <select name="ID" id="coordinator">
+          <option value="volvo">Select</option>
+          <option value="saab">someone</option>
+          <option value="opel">200309999</option>
+          <option value="dr">100230020</option>
+        </select>
+        
+        <input type="text" id="text" name="text"> <br><br>
+        <input type="submit" value="Submit" class="btn-get-started">
       </form>
 
     </div>

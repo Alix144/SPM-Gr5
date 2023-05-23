@@ -1,15 +1,15 @@
 <?php
-session_start();
-if (!isset($_SESSION['username'])) {
-  header("location:emplogin.php");
-}
+// session_start();
+// if (!isset($_SESSION['username'])) {
+//   header("location:emplogin.php");
+// }
 ?>
 <!doctype html>
 <html>
 
 <head>
   <meta charset="utf-8">
-  <title>Student Home</title>
+  <title>Announcements</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -37,21 +37,13 @@ if (!isset($_SESSION['username'])) {
 
   <style>
     body {
-      background-color: rgb(4, 85, 85);
-      height: 100%;
+      background-image: linear-gradient(to bottom right, #543380, #2f96d6);
       width: 100%;
       overflow: hidden;
     }
 
     header{
       position: sticky !important;
-    }
-    /* ************ Particle JS ************ */
-    #particles-js {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      z-index: -10 !important;
     }
 
     .findinternbtn button {
@@ -242,16 +234,15 @@ h1{
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">Welcome Student</a></h1>
+        <h1><a href="#intro" class="scrollto">Announcements</a></h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="welcomestudent.php">Home</a></li>
-          <li><a href="new-application.php">New Application</a></li>
-          <li><a href="mainjobs.php">Find Internship</a></li>
-          <li><a href="appliedjobs.php">Applied Internships</a></li>
-          <li><a href="inbox-st.php">Inbox</a></li>
+          <li><a href="coordinator.php">Home</a></li>
+          <li><a href="view-app-coo.php">View Applications</a></li>
+          <li><a href="announce-co.php">Announce</a></li>
+          <li><a href="inbox-co.php">Inbox</a></li>
           <li><a href="logout2.php">Logout</a></li>
         </ul>
       </nav>

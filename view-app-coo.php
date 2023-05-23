@@ -1,15 +1,15 @@
 <?php
-session_start();
-if (!isset($_SESSION['username'])) {
-  header("location:emplogin.php");
-}
+// session_start();
+// if (!isset($_SESSION['empname'])) {
+//   header("location:emplogin.php");
+// }
 ?>
 <!doctype html>
 <html>
 
 <head>
   <meta charset="utf-8">
-  <title>Student Home</title>
+  <title>View Applications</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -37,7 +37,7 @@ if (!isset($_SESSION['username'])) {
 
   <style>
     body {
-      background-color: rgb(4, 85, 85);
+      background-image: linear-gradient(to bottom right, #543380, #2f96d6);
       height: 100%;
       width: 100%;
       overflow: hidden;
@@ -199,9 +199,9 @@ h1{
   margin-bottom: 10px;
   width: 90%;
 
-  display: flex;
-  align-content: center;
-  justify-content: space-around;
+
+  text-align: left;
+  justify-content: space-between;
   height: 30px;
   color: rgb(0,0,0);
   border-bottom: solid 1px rgb(41, 41, 41);
@@ -223,6 +223,36 @@ h1{
 
 }
 
+.st-info{
+    padding: 30px;
+    color: black;
+    text-align: left;
+}
+
+.st-info h5{
+    font-weight: bold;
+    display: inline;
+}
+.st-info p{
+    display: inline;
+}
+
+.st-info a{
+    margin: 10px;
+    border-bottom: solid 2px;
+}
+
+.sgk-btns a{
+    width: 45%;
+}
+
+.current-tab{
+    background-color: #18d26e;
+    border-radius: 10px;
+}
+
+
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -237,21 +267,21 @@ h1{
 
 
 <body>
+  <!-- <div id="particles-js"></div> -->
   <header id="header">
 
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">Welcome Student</a></h1>
+        <h1><a href="#intro" class="scrollto">View Applications</a></h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="welcomestudent.php">Home</a></li>
-          <li><a href="new-application.php">New Application</a></li>
-          <li><a href="mainjobs.php">Find Internship</a></li>
-          <li><a href="appliedjobs.php">Applied Internships</a></li>
-          <li><a href="inbox-st.php">Inbox</a></li>
+        <li><a href="coordinator.php">Home</a></li>
+          <li class="menu-active"><a href="view-app-coo.php">View Applications</a></li>
+          <li><a href="announce-co.php">Announce</a></li>
+          <li><a href="inbox-co.php">Inbox</a></li>
           <li><a href="logout2.php">Logout</a></li>
         </ul>
       </nav>
@@ -262,22 +292,40 @@ h1{
 
 
     <div class="content content-2">
-    <h3>Announcements</h3>
+    <h3>View Applications</h3>
 
       <form action="">
         <div class="coming">
-          <div class="msgs">
-            <img src="img/announcement.png" alt="mail">
-            <p>Documents re..</p>
+          <div class="msgs current-tab">
+            <img src="img/document.png" alt="mail">
+            <p>Leo Messi</p>
           </div>
 
           <div class="msgs">
-            <img src="img/announcement.png" alt="mail">
-            <p>Attention..</p>
+            <img src="img/document.png" alt="mail">
+            <p>Someone</p>
           </div>
         </div>
 
-        <div class="show-coming"></div>
+        <div class="show-coming">
+            <div class="st-info" style="color:white;">
+                <h5>Name: </h5><p>Messi</p> <br>
+                <h5>ID: </h5><p>200000000</p> <br>
+                <h5>Email: </h5><p>messi@st.uskudar.edu.tr</p> <br>
+                <h5>Department: </h5> <p>Software Engineering</p> <br>
+                <h5>Current Year: </h5> <p>3th</p> <br>
+                <h5>Type of Internship: </h5> <p>Compulsory</p> <br>
+                <a href="">Application Form</a>
+                <a href="">Official Letter</a>
+                <a href="">Transcript</a>
+            </div>
+
+            <div class="sgk-btns">
+                <input type="file" id="myFile" name="filename" hidden>
+                <a href="" class="btn-get-started scrollto">Approve</a>
+            </div>
+
+        </div>
       </form>
 
     </div>
