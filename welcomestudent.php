@@ -293,10 +293,9 @@ if (!isset($_SESSION['username'])) {
         <div class="my-application content-2-children">
           <h3>My Applications</h3>
           <div class="incoming">
-
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 1</p>
               </div>
               <div>
@@ -306,7 +305,7 @@ if (!isset($_SESSION['username'])) {
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 2</p>
               </div>
               <div>
@@ -316,7 +315,7 @@ if (!isset($_SESSION['username'])) {
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 3</p>
               </div>
               <div>
@@ -326,7 +325,7 @@ if (!isset($_SESSION['username'])) {
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 4</p>
               </div>
               <div>
@@ -336,7 +335,7 @@ if (!isset($_SESSION['username'])) {
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 5</p>
               </div>
               <div>
@@ -346,7 +345,7 @@ if (!isset($_SESSION['username'])) {
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 6</p>
               </div>
               <div>
@@ -356,7 +355,7 @@ if (!isset($_SESSION['username'])) {
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 7</p>
               </div>
               <div>
@@ -366,7 +365,7 @@ if (!isset($_SESSION['username'])) {
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 8</p>
               </div>
               <div>
@@ -385,7 +384,7 @@ if (!isset($_SESSION['username'])) {
 
                         <div class="new-coming job-btn" onclick="navigateToJobs()">
                             <div class="new-coming-child">
-                                <img src="img/bag.png" alt="Document">
+                                <img src="img/bag1.png" alt="Document">
                                 <p>Web Developer</p>
                             </div>
                             <div>
@@ -395,7 +394,7 @@ if (!isset($_SESSION['username'])) {
 
                         <div class="new-coming job-btn" onclick="navigateToJobs()">
                             <div class="new-coming-child">
-                                <img src="img/bag.png" alt="Document">
+                                <img src="img/bag1.png" alt="Document">
                                 <p>Project Manager</p>
                             </div>
                             <div>
@@ -416,7 +415,7 @@ if (!isset($_SESSION['username'])) {
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>About the dea..</p>
                             </div>
                             <div>
@@ -426,7 +425,7 @@ if (!isset($_SESSION['username'])) {
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>Documents required</p>
                             </div>
                             <div>
@@ -434,9 +433,9 @@ if (!isset($_SESSION['username'])) {
                             </div>
                         </div>
 
-                        <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
+                        <div class="new-coming Announcementt-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>The new dates</p>
                             </div>
                             <div>
@@ -446,7 +445,7 @@ if (!isset($_SESSION['username'])) {
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>Attention..</p>
                             </div>
                             <div>
@@ -456,7 +455,7 @@ if (!isset($_SESSION['username'])) {
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>Last date to..</p>
                             </div>
                             <div>
@@ -466,7 +465,7 @@ if (!isset($_SESSION['username'])) {
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>About the dea..</p>
                             </div>
                             <div>
@@ -476,7 +475,7 @@ if (!isset($_SESSION['username'])) {
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>New system</p>
                             </div>
                             <div>
@@ -486,7 +485,7 @@ if (!isset($_SESSION['username'])) {
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>About the dea..</p>
                             </div>
                             <div>

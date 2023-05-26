@@ -317,7 +317,7 @@ if (!isset($_SESSION['empname'])) {
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p style="color:white; font-weight:bold">Application 1</p>
               </div>
               <div>
@@ -327,7 +327,7 @@ if (!isset($_SESSION['empname'])) {
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p style="color:white; font-weight:bold">Application 2</p>
               </div>
               <div>
@@ -337,7 +337,7 @@ if (!isset($_SESSION['empname'])) {
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p style="color:white; font-weight:bold">Application 3</p>
               </div>
               <div>
@@ -347,7 +347,7 @@ if (!isset($_SESSION['empname'])) {
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p style="color:white; font-weight:bold">Application 4</p>
               </div>
               <div>
@@ -357,7 +357,7 @@ if (!isset($_SESSION['empname'])) {
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p style="color:white; font-weight:bold">Application 5</p>
               </div>
               <div>
@@ -367,7 +367,7 @@ if (!isset($_SESSION['empname'])) {
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p style="color:white; font-weight:bold">Application 6</p>
               </div>
               <div>
@@ -377,7 +377,7 @@ if (!isset($_SESSION['empname'])) {
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p style="color:white; font-weight:bold">Application 7</p>
               </div>
               <div>
@@ -387,7 +387,7 @@ if (!isset($_SESSION['empname'])) {
 
           <div class="new-coming" onclick="goToViewApplications()">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p style="color:white; font-weight:bold">Application 8</p>
               </div>
               <div>
@@ -406,7 +406,7 @@ if (!isset($_SESSION['empname'])) {
 
                         <div class="new-coming job-btn" onclick="navigateToInbox()">
                             <div class="new-coming-child">
-                                <img src="img/mail.png" alt="Document">
+                                <img src="img/email.png" alt="Document">
                                 <p style="color:white; font-weight:bold">Working hours</p>
                             </div>
                             <div>
@@ -416,7 +416,7 @@ if (!isset($_SESSION['empname'])) {
 
                         <div class="new-coming job-btn" onclick="navigateToInbox()">
                             <div class="new-coming-child">
-                                <img src="img/mail.png" alt="Document">
+                                <img src="img/email.png" alt="Document">
                                 <p style="color:white; font-weight:bold">New applications</p>
                             </div>
                             <div>
@@ -437,7 +437,7 @@ if (!isset($_SESSION['empname'])) {
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/company.png" alt="Document">
+                                <img src="img/city.png" alt="Document">
                                 <p style="color:white; font-weight:bold">Google</p>
                             </div>
                             <div>
@@ -447,7 +447,7 @@ if (!isset($_SESSION['empname'])) {
 
                         <div class="new-coming Announcement-btn" onclick="">
                             <div class="new-coming-child">
-                                <img src="img/company.png" alt="Document">
+                                <img src="img/city.png" alt="Document">
                                 <p style="color:white; font-weight:bold">Meta</p>
                             </div>
                             <div>
@@ -458,7 +458,7 @@ if (!isset($_SESSION['empname'])) {
 
                         <div class="new-coming Announcement-btn" onclick="">
                             <div class="new-coming-child">
-                                <img src="img/company.png" alt="Document">
+                                <img src="img/city.png" alt="Document">
                                 <p style="color:white; font-weight:bold">Ülker</p>
                             </div>
                             <div>

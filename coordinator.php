@@ -271,7 +271,7 @@
       <div class="profile">
         <img src="img/coordinator.png" alt="">
         <div class="info">
-          <h3>Elif</h3>
+          <h3>Murat</h3>
           <h5>ID: 200000000</h5>
           <h5>Instructor</h5>
         </div>
@@ -294,7 +294,7 @@
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 1</p>
               </div>
               <div>
@@ -304,7 +304,7 @@
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 2</p>
               </div>
               <div>
@@ -314,7 +314,7 @@
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 3</p>
               </div>
               <div>
@@ -324,7 +324,7 @@
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 4</p>
               </div>
               <div>
@@ -334,7 +334,7 @@
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 5</p>
               </div>
               <div>
@@ -344,7 +344,7 @@
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 6</p>
               </div>
               <div>
@@ -354,7 +354,7 @@
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 7</p>
               </div>
               <div>
@@ -364,7 +364,7 @@
 
           <div class="new-coming">
               <div class="new-coming-child">
-                  <img src="img/document.png" alt="Document">
+                  <img src="img/doc.png" alt="Document">
                   <p>Application 8</p>
               </div>
               <div>
@@ -381,9 +381,9 @@
                     <h3>Official Letter Requests</h3>
                     <div class="incoming">
 
-                        <div class="new-coming job-btn" onclick="">
+                        <div class="new-coming job-btn" onclick="navigate()">
                             <div class="new-coming-child">
-                                <img src="img/document.png" alt="Document">
+                                <img src="img/doc.png" alt="Document">
                                 <p>Leo Messi</p>
                             </div>
                             <div>
@@ -391,9 +391,9 @@
                             </div>
                         </div>
 
-                        <div class="new-coming job-btn" onclick="">
+                        <div class="new-coming job-btn" onclick="navigate()">
                             <div class="new-coming-child">
-                                <img src="img/document.png" alt="Document">
+                                <img src="img/doc.png" alt="Document">
                                 <p>Ali</p>
                             </div>
                             <div>
@@ -414,7 +414,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>About the dea..</p>
                             </div>
                             <div>
@@ -424,7 +424,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>Documents required</p>
                             </div>
                             <div>
@@ -434,7 +434,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>The new dates</p>
                             </div>
                             <div>
@@ -444,7 +444,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>Attention..</p>
                             </div>
                             <div>
@@ -454,7 +454,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>Last date to..</p>
                             </div>
                             <div>
@@ -464,7 +464,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>About the dea..</p>
                             </div>
                             <div>
@@ -474,7 +474,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>New system</p>
                             </div>
                             <div>
@@ -484,7 +484,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateAnnouncement()">
                             <div class="new-coming-child">
-                                <img src="img/Announcement.png" alt="Document">
+                                <img src="img/Announcementt.png" alt="Document">
                                 <p>About the dea..</p>
                             </div>
                             <div>
@@ -501,7 +501,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateToInbox()">
                             <div class="new-coming-child">
-                                <img src="img/mail.png" alt="Document">
+                                <img src="img/email.png" alt="Document">
                                 <p>About the dea..</p>
                             </div>
                             <div>
@@ -511,7 +511,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateToInbox()">
                             <div class="new-coming-child">
-                                <img src="img/mail.png" alt="Document">
+                                <img src="img/email.png" alt="Document">
                                 <p>Documents required</p>
                             </div>
                             <div>
@@ -521,7 +521,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateToInbox()">
                             <div class="new-coming-child">
-                                <img src="img/mail.png" alt="Document">
+                                <img src="img/email.png" alt="Document">
                                 <p>The new dates</p>
                             </div>
                             <div>
@@ -531,7 +531,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateToInbox()">
                             <div class="new-coming-child">
-                                <img src="img/mail.png" alt="Document">
+                                <img src="img/email.png" alt="Document">
                                 <p>Attention..</p>
                             </div>
                             <div>
@@ -541,7 +541,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateToInbox()">
                             <div class="new-coming-child">
-                                <img src="img/mail.png" alt="Document">
+                                <img src="img/email.png" alt="Document">
                                 <p>Last date to..</p>
                             </div>
                             <div>
@@ -551,7 +551,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateToInbox()">
                             <div class="new-coming-child">
-                                <img src="img/mail.png" alt="Document">
+                                <img src="img/email.png" alt="Document">
                                 <p>About the dea..</p>
                             </div>
                             <div>
@@ -561,7 +561,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateToInbox()">
                             <div class="new-coming-child">
-                                <img src="img/mail.png" alt="Document">
+                                <img src="img/email.png" alt="Document">
                                 <p>New system</p>
                             </div>
                             <div>
@@ -571,7 +571,7 @@
 
                         <div class="new-coming Announcement-btn" onclick="navigateToInbox()">
                             <div class="new-coming-child">
-                                <img src="img/mail.png" alt="Document">
+                                <img src="img/email.png" alt="Document">
                                 <p>About the dea..</p>
                             </div>
                             <div>
@@ -606,8 +606,13 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
   <script src="js/main.js"></script>
+  <script src="index2.js"></script>
   <script src="index3.js"></script>
 
+  <script>function navigate(){
+    window.location.href = "official-letter-co.php";
+    }
+  </script>
 
 </body>
 

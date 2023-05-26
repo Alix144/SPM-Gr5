@@ -5,3 +5,7 @@ function navigateToInbox(){
 function navigateAnnouncement(){
     window.location.href = "announcements-co.php";
 }
+
+function navigate(){
+    window.location.href = "official-letter-co.php";
+}
